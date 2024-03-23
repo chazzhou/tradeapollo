@@ -1,0 +1,3 @@
+[submodule "tradeapollo-dashboard"]
+	path = tradeapollo-dashboard
+	url = https://github.com/chazzhou/tradeapollo-dashboard.git
