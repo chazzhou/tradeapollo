@@ -14,6 +14,7 @@ Ensure Python is installed on your system. Install the required libraries with:
 
 ```bash
 pip install streamlit pandas matplotlib
+```
 
 ## Usage
 
