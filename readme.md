@@ -27,7 +27,7 @@ To get started with TradeApollo, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/chazzhou/tradeapollo.git
+   git clone --recursive https://github.com/chazzhou/tradeapollo.git
    ```
 
 2. Set up the backend API:
