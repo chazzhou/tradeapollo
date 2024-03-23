@@ -1,3 +1,5 @@
+**Data Collection.py**
+
 # Energy Data Collection Scripts
 
 This repository contains a collection of Python scripts designed to retrieve various energy-related data from different APIs and websites. Each script fetches specific types of data, processes it, and saves it to a PostgreSQL database for further analysis.
@@ -45,3 +47,34 @@ This repository contains a collection of Python scripts designed to retrieve var
 1. Ensure you have all the dependencies installed (`pandas`, `requests`, `sqlalchemy`, `bs4`, `json`).
 2. Configure your PostgreSQL database connection details (`create_engine` function calls).
 3. Run the desired script(s) to start fetching and saving energy-related data to the PostgreSQL database.
+
+
+
+----
+**save_to_postgresql_dag.py**
+
+**Functionality:**
+
+1. **Data Retrieval:**
+   - Retrieves energy-related data from multiple sources.
+   - Data types include price data, spot market data, day-ahead prices, trade data, and trade netflows...
+
+2. **Data Processing:**
+   - Processes the retrieved data, which may involve parsing HTML content, converting JSON responses to pandas DataFrames, and manipulating DataFrame structures.
+
+3. **Database Interaction:**
+   - Stores the processed data into a PostgreSQL database.
+   - Utilizes SQLAlchemy for database interaction within a context manager to ensure proper handling of database connections.
+
+4. **Email Notification:**
+   - Sends an email notification upon successful execution of all tasks within the DAG.
+
+**Dependencies:**
+
+1. **Python Libraries:**
+   - pandas: Data manipulation and processing.
+   - requests: HTTP requests for fetching data from APIs and web sources.
+   - BeautifulSoup: HTML parsing for web scraping purposes.
+   - json: Handling JSON data.
+   - airflow: Workflow orchestration and task scheduling.
+   - psycopg2: PostgreSQL database adapter (implicitly required by airflow).
